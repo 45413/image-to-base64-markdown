@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image to Base64 Converter</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image to Markdown Base64 Converter</h1>
+        <div class="display-section">
+            <div class="image-area">
+                <img id="imageDisplay" src="" alt="Selected Image" />
+                <div class="image-controls">
+                    <label for="imageInput" class="image-upload-label">Choose File</label>
+                    <input type="file" id="imageInput" accept="image/*">
+                    <button id="pasteButton">Paste from Clipboard</button>
+                </div>
+            </div>
+            <div class="base64-area">
+                <textarea id="base64Output" readonly></textarea>
+                <button id="copyButton">Copy Base64</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

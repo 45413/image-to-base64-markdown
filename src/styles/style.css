@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.upload-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.display-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 16px;
+    min-height: 320px;
+}
+
+.image-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.image-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    gap: 10px;
+}
+
+/* Hide the default file input */
+#imageInput {
+    display: none;
+}
+
+/* Style the label to look like a button */
+.image-upload-label {
+    padding: 10px 24px;
+    font-size: 16px;
+    background: #00b894;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: inline-block;
+    text-align: center;
+}
+
+.image-upload-label:hover {
+    background: #008c6e;
+}
+
+.base64-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#imageDisplay {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 320px;
+    object-fit: contain;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#base64Output {
+    width: 100%;
+    height: 320px;
+    resize: none;
+    font-family: monospace;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    box-sizing: border-box;
+    background: #fafafa;
+    margin-bottom: 16px;
+}
+
+#copyButton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 24px;
+    font-size: 16px;
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#copyButton:hover {
+    background: #0056b3;
+}
+
+#pasteButton {
+    padding: 10px 24px;
+    font-size: 16px;
+    background: #00b894;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#pasteButton:hover {
+    background: #008c6e;
+}
