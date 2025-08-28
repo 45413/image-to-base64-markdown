@@ -4,6 +4,10 @@ This project is a simple web application that allows users to upload an image fr
 
 Live Version: https://45413.github.io/image-to-markdown/
 
+## Demo
+
+![Demo](/docs/imgs/image-to-markdown-demo.gif)
+
 ## Project Structure
 
 ```
