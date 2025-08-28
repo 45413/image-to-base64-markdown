@@ -2,6 +2,8 @@
 
 This project is a simple web application that allows users to upload an image from their disk or paste an image from their clipboard, and returns a markdown-ready base64 encoded string that can be copied and pasted directly into markdown.
 
+Live Version: https://45413.github.io/image-to-markdown/
+
 ## Project Structure
 
 ```

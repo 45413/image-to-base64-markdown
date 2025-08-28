@@ -3,6 +3,7 @@ const imageDisplay = document.getElementById('imageDisplay');
 const base64Output = document.getElementById('base64Output');
 const copyButton = document.getElementById('copyButton');
 const pasteButton = document.getElementById('pasteButton');
+const imagePlaceholder = document.getElementById('imagePlaceholder');
 
 function setImageAndBase64(file) {
     if (!file || !file.type.startsWith('image/')) return;
@@ -10,6 +11,8 @@ function setImageAndBase64(file) {
     const reader = new FileReader();
     reader.onload = function(e) {
         imageDisplay.src = e.target.result;
+        imageDisplay.style.display = 'block';
+        imagePlaceholder.style.display = 'none';
         // Extract base64 data
         const base64Data = e.target.result.split(',')[1];
         // Compose markdown image string
@@ -18,6 +21,12 @@ function setImageAndBase64(file) {
     };
     reader.readAsDataURL(file);
 }
+
+// On page load, show placeholder and hide image
+window.addEventListener('DOMContentLoaded', () => {
+    imageDisplay.style.display = 'none';
+    imagePlaceholder.style.display = 'flex';
+});
 
 // Handle file input
 imageInput.addEventListener('change', (e) => {

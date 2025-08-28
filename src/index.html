@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Image to Base64 Converter</title>
+    <title>Image to Markdown</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -11,7 +11,10 @@
         <h1>Image to Markdown Base64 Converter</h1>
         <div class="display-section">
             <div class="image-area">
-                <img id="imageDisplay" src="" alt="Selected Image" />
+                <div class="image-display-stack">
+                    <div id="imagePlaceholder" class="image-placeholder">please upload an image</div>
+                    <img id="imageDisplay" src="" alt="" style="display:none;" />
+                </div>
                 <div class="image-controls">
                     <label for="imageInput" class="image-upload-label">Choose File</label>
                     <input type="file" id="imageInput" accept="image/*">
